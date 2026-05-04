@@ -26,7 +26,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.3rem 4rem;display:
 nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .nav-brand{font-family:'Amiri',serif;font-size:1rem;font-weight:700;color:var(--gold2);cursor:pointer}
 .nav-links{display:flex;gap:2.2rem;list-style:none}
-.nav-links a{font-family:'Tajawal',sans-serif;font-size:0.82rem;color:var(--cream3);letter-spacing:0.06em;transition:color 0.25s;cursor:pointer;display:inline-block}
+.nav-links a{font-family:'Tajawal',sans-serif;font-size:0.82rem;color:var(--cream3);letter-spacing:0.01em;transition:color 0.25s;cursor:pointer;display:inline-block}
 .nav-links a:hover,.nav-links a.active{color:var(--gold2)}
 
 /* DETAIL VIEWS */
@@ -34,9 +34,9 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .detail-view.active{display:block;animation:fadeIn 0.4s ease}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .wrap-sm{max-width:720px;margin:0 auto;padding:5rem 2.5rem}
-.d-back{font-family:'Tajawal',sans-serif;font-size:0.75rem;color:var(--cream3);letter-spacing:0.15em;cursor:pointer;display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:3rem;border:0.5px solid var(--gb);padding:0.4rem 1rem;background:transparent;transition:color 0.25s}
+.d-back{font-family:'Tajawal',sans-serif;font-size:0.75rem;color:var(--cream3);letter-spacing:0.03em;cursor:pointer;display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:3rem;border:0.5px solid var(--gb);padding:0.4rem 1rem;background:transparent;transition:color 0.25s}
 .d-back:hover{color:var(--gold2)}
-.d-label{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.25em;margin-bottom:0.6rem;font-weight:400;text-transform:uppercase}
+.d-label{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.05em;margin-bottom:0.6rem;font-weight:400;text-transform:uppercase}
 .d-title{font-family:'Amiri',serif;font-size:clamp(2rem,5vw,3.6rem);font-weight:700;color:var(--cream);line-height:1.2;margin-bottom:2rem}
 .d-divider{width:60px;height:1px;background:var(--gold);margin-bottom:2.5rem}
 .d-body{font-family:'Amiri',serif;font-size:1.15rem;color:var(--cream2);line-height:2.4;max-width:620px}
@@ -44,10 +44,10 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .d-body p:last-child{margin-bottom:0}
 .d-body.poetry{white-space:pre-line}
 .d-desc{font-family:'Amiri',serif;font-size:1.1rem;color:var(--cream2);line-height:2.2;margin-bottom:3rem;max-width:600px}
-.d-year{font-family:'Tajawal',sans-serif;font-size:0.75rem;color:var(--gold);letter-spacing:0.2em;margin-bottom:0.8rem;font-weight:400}
-.d-genre{font-family:'Tajawal',sans-serif;font-size:0.78rem;color:var(--cream3);letter-spacing:0.2em;margin-bottom:0.4rem;font-weight:300}
+.d-year{font-family:'Tajawal',sans-serif;font-size:0.75rem;color:var(--gold);letter-spacing:0.03em;margin-bottom:0.8rem;font-weight:400}
+.d-genre{font-family:'Tajawal',sans-serif;font-size:0.78rem;color:var(--cream3);letter-spacing:0.03em;margin-bottom:0.4rem;font-weight:300}
 .d-badge{display:inline-block;margin-bottom:0.4rem;font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--gold);border:0.5px solid var(--gb);padding:0.2rem 0.7rem;font-weight:400}
-.d-ex-title{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.25em;text-transform:uppercase;margin-bottom:1.5rem;font-weight:400}
+.d-ex-title{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1.5rem;font-weight:400}
 .d-excerpt{border-right:2px solid var(--gold);padding:1rem 1.5rem;margin-bottom:1.2rem;background:var(--bg3)}
 .d-excerpt p{font-family:'Amiri',serif;font-size:1rem;color:var(--cream2);line-height:2;font-style:italic}
 
@@ -57,12 +57,12 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 /* HERO */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative}
 .hero::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:1px;height:80px;background:linear-gradient(to bottom,var(--gold),transparent)}
-.h-orn{font-size:1rem;color:var(--gold);letter-spacing:0.5em;margin-bottom:2rem;opacity:0.6;animation:up 0.9s ease 0.1s both}
+.h-orn{font-size:1rem;color:var(--gold);letter-spacing:0.15em;margin-bottom:2rem;opacity:0.6;animation:up 0.9s ease 0.1s both}
 .h-title{font-family:'Amiri',serif;font-size:clamp(3rem,9vw,7rem);font-weight:700;color:var(--cream);line-height:1.1;margin-bottom:0.8rem;animation:up 0.9s ease 0.25s both}
-.h-sub{font-family:'Tajawal',sans-serif;font-size:0.8rem;font-weight:300;color:var(--cream3);letter-spacing:0.4em;text-transform:uppercase;margin-bottom:1.8rem;animation:up 0.9s ease 0.35s both}
+.h-sub{font-family:'Tajawal',sans-serif;font-size:0.8rem;font-weight:300;color:var(--cream3);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.8rem;animation:up 0.9s ease 0.35s both}
 .h-author{font-family:'Amiri',serif;font-size:1.5rem;color:var(--gold);font-style:italic;margin-bottom:2.5rem;animation:up 0.9s ease 0.45s both}
 .h-bismillah{max-width:600px;font-family:'Amiri',serif;font-size:1.2rem;color:var(--cream2);line-height:2;font-style:italic;border-top:0.5px solid var(--gb);border-bottom:0.5px solid var(--gb);padding:1.4rem 2rem;animation:up 0.9s ease 0.6s both}
-.h-scroll{position:absolute;bottom:100px;left:50%;transform:translateX(-50%);font-family:'Tajawal',sans-serif;font-size:0.65rem;color:var(--cream3);letter-spacing:0.25em;animation:up 0.9s ease 0.8s both;cursor:pointer;transition:color 0.25s}
+.h-scroll{position:absolute;bottom:100px;left:50%;transform:translateX(-50%);font-family:'Tajawal',sans-serif;font-size:0.65rem;color:var(--cream3);letter-spacing:0.05em;animation:up 0.9s ease 0.8s both;cursor:pointer;transition:color 0.25s}
 .h-scroll:hover{color:var(--gold)}
 @keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 
@@ -71,13 +71,13 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .wrap{max-width:1020px;margin:0 auto;padding:6rem 2.5rem}
 .sec-head{display:flex;align-items:center;gap:1.2rem;margin-bottom:3.5rem}
 .sec-head::after{content:'';flex:1;height:0.5px;background:var(--gb)}
-.sec-tag{font-family:'Tajawal',sans-serif;font-size:0.72rem;letter-spacing:0.3em;color:var(--gold);font-weight:400;white-space:nowrap;text-transform:uppercase}
+.sec-tag{font-family:'Tajawal',sans-serif;font-size:0.72rem;letter-spacing:0.05em;color:var(--gold);font-weight:400;white-space:nowrap;text-transform:uppercase}
 .sec-title{font-family:'Amiri',serif;font-size:1.9rem;font-weight:700;color:var(--cream);white-space:nowrap}
 
 /* MAQADIMA */
 #section-maqadima{background:var(--bg2)}
 .maqadima-inner{max-width:800px;margin:0 auto;padding:7rem 2.5rem}
-.maqadima-label{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.3em;text-transform:uppercase;margin-bottom:2.5rem;font-weight:400;opacity:0.8}
+.maqadima-label{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:2.5rem;font-weight:400;opacity:0.8}
 .maqadima-body{font-family:'Amiri',serif;font-size:1.35rem;color:var(--cream);line-height:2.3;border-right:3px solid var(--gold);padding-right:2rem}
 .maqadima-body p{margin-bottom:1.5rem}
 .maqadima-body p:last-child{margin-bottom:0}
@@ -85,9 +85,9 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 /* QUOTES MURAL */
 #section-quotes{background:var(--bg)}
 .mural-filters{display:flex;gap:0.7rem;flex-wrap:wrap;margin-bottom:1.5rem}
-.mf-tag{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--cream3);border:0.5px solid var(--b3);padding:0.3rem 1rem;background:transparent;letter-spacing:0.1em;cursor:pointer;transition:all 0.25s;font-weight:400}
+.mf-tag{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--cream3);border:0.5px solid var(--b3);padding:0.3rem 1rem;background:transparent;letter-spacing:0.02em;cursor:pointer;transition:all 0.25s;font-weight:400}
 .mf-tag:hover,.mf-tag.active{color:var(--gold2);border-color:var(--gold);background:var(--gs)}
-.mural-count{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--cream3);letter-spacing:0.15em;margin-bottom:2.5rem;font-weight:300}
+.mural-count{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--cream3);letter-spacing:0.03em;margin-bottom:2.5rem;font-weight:300}
 .mural-wall{columns:3;column-gap:1.2rem}
 .qcard{break-inside:avoid;border:0.5px solid var(--b2);background:var(--bg2);padding:1.8rem;margin-bottom:1.2rem;transition:border-color 0.3s,background 0.3s}
 .qcard:hover{border-color:var(--gb);background:var(--bg3)}
@@ -95,7 +95,7 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .qcard-text.large{font-size:1.3rem}.qcard-text.small{font-size:0.97rem}
 .qcard-hr{height:0.5px;background:var(--gb);margin-bottom:1rem}
 .qcard-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:0.8rem;flex-wrap:wrap}
-.qcard-origin{font-family:'Tajawal',sans-serif;font-size:0.68rem;color:var(--gold);letter-spacing:0.1em;font-weight:400;display:block}
+.qcard-origin{font-family:'Tajawal',sans-serif;font-size:0.68rem;color:var(--gold);letter-spacing:0.02em;font-weight:400;display:block}
 .qcard-tag{font-family:'Tajawal',sans-serif;font-size:0.62rem;color:var(--cream3);letter-spacing:0.08em;font-weight:300;margin-top:0.2rem;display:block}
 .qcard-link{font-family:'Tajawal',sans-serif;font-size:0.65rem;color:var(--cream3);border:0.5px solid var(--b3);padding:0.25rem 0.7rem;background:transparent;letter-spacing:0.08em;cursor:pointer;transition:all 0.25s;white-space:nowrap;flex-shrink:0;font-weight:400}
 .qcard-link:hover{color:var(--gold2);border-color:var(--gold);background:var(--gs)}
@@ -103,7 +103,7 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 
 /* ══ TIMELINE ══ */
 .timeline-wrap{margin-top:5rem;padding-top:3.5rem;border-top:0.5px solid var(--b3)}
-.timeline-label{font-family:'Tajawal',sans-serif;font-size:0.68rem;letter-spacing:0.2em;color:var(--cream3);margin-bottom:2.5rem;text-align:center}
+.timeline-label{font-family:'Tajawal',sans-serif;font-size:0.68rem;letter-spacing:0.05em;color:var(--cream3);margin-bottom:2.5rem;text-align:center}
 .tl-track{position:relative;overflow-x:auto;overflow-y:visible;padding-bottom:2rem;cursor:grab;user-select:none;-webkit-overflow-scrolling:touch}
 .tl-track:active{cursor:grabbing}
 .tl-track::-webkit-scrollbar{height:2px}
@@ -116,7 +116,7 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .tl-dot{width:0.5rem;height:0.5rem;border-radius:50%;background:var(--cream3);border:1.5px solid var(--bg);margin-top:1.9rem;flex-shrink:0;transition:all 0.25s;position:relative;z-index:2}
 .tl-node:hover .tl-dot{background:var(--gold2);box-shadow:0 0 8px var(--gold)}
 .tl-content{text-align:center;margin-top:1rem;padding:0 0.5rem}
-.tl-year{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--gold);letter-spacing:0.15em;margin-bottom:0.4rem}
+.tl-year{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--gold);letter-spacing:0.03em;margin-bottom:0.4rem}
 .tl-key{font-family:'Amiri',serif;font-size:0.9rem;color:var(--cream2);line-height:1.5;transition:color 0.25s}
 .tl-node:hover .tl-key{color:var(--cream)}
 .tl-sub{font-family:'Tajawal',sans-serif;font-size:0.65rem;color:var(--cream3);line-height:1.5;margin-top:0.35rem;max-height:0;overflow:hidden;opacity:0;transition:max-height 0.35s ease,opacity 0.35s ease}
@@ -127,30 +127,30 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .tl-upcoming .tl-dot{background:transparent;border:1.5px solid var(--gold);border-style:dashed}
 .tl-upcoming .tl-year{color:var(--cream3)}
 .tl-upcoming .tl-key{color:var(--cream3);font-style:italic}
-.tl-upcoming-label{font-family:'Tajawal',sans-serif;font-size:0.6rem;letter-spacing:0.15em;color:var(--gold);margin-bottom:0.5rem;opacity:0.7}
+.tl-upcoming-label{font-family:'Tajawal',sans-serif;font-size:0.6rem;letter-spacing:0.03em;color:var(--gold);margin-bottom:0.5rem;opacity:0.7}
 
 
 /* ══ PALETTE SWITCHER (preview tool) ══ */
 #palette-switcher{position:relative;z-index:9999}
-#palette-toggle{font-family:'Tajawal',sans-serif;font-size:0.65rem;letter-spacing:0.15em;color:var(--cream3);background:transparent;border:0.5px solid var(--b3);padding:0.4rem 0.9rem;cursor:pointer;transition:all 0.2s;border-radius:2px}
+#palette-toggle{font-family:'Tajawal',sans-serif;font-size:0.65rem;letter-spacing:0.03em;color:var(--cream3);background:transparent;border:0.5px solid var(--b3);padding:0.4rem 0.9rem;cursor:pointer;transition:all 0.2s;border-radius:2px}
 #palette-toggle:hover{color:var(--gold);border-color:var(--gold)}
 #palette-options{display:none;position:absolute;top:calc(100% + 0.5rem);right:0;flex-direction:column;gap:0.3rem;background:var(--bg2);border:0.5px solid var(--b3);padding:0.5rem;border-radius:4px;min-width:120px;box-shadow:0 4px 20px rgba(0,0,0,0.15)}
 #palette-options.open{display:flex}
-.p-swatch{display:flex;align-items:center;gap:0.6rem;cursor:pointer;padding:0.35rem 0.75rem;border:0.5px solid transparent;transition:all 0.2s;font-family:'Tajawal',sans-serif;font-size:0.65rem;letter-spacing:0.1em}
+.p-swatch{display:flex;align-items:center;gap:0.6rem;cursor:pointer;padding:0.35rem 0.75rem;border:0.5px solid transparent;transition:all 0.2s;font-family:'Tajawal',sans-serif;font-size:0.65rem;letter-spacing:0.02em}
 .p-swatch:hover,.p-swatch.active{border-color:var(--gold);color:var(--gold)}
 .p-swatch span{color:var(--cream3);font-size:0.6rem}
 .p-dot{width:10px;height:10px;border-radius:50%;border:1px solid rgba(255,255,255,0.2)}
 
 
-.mural-more-btn{font-family:'Tajawal',sans-serif;font-size:0.72rem;letter-spacing:0.2em;color:var(--cream3);background:transparent;border:0.5px solid var(--b3);padding:0.7rem 2.5rem;cursor:pointer;transition:all 0.25s}
+.mural-more-btn{font-family:'Tajawal',sans-serif;font-size:0.72rem;letter-spacing:0.03em;color:var(--cream3);background:transparent;border:0.5px solid var(--b3);padding:0.7rem 2.5rem;cursor:pointer;transition:all 0.25s}
 .mural-more-btn:hover{color:var(--gold);border-color:var(--gold);background:var(--gs)}
 
 /* NUSUS */
 #section-nusus{background:var(--bg2)}
 .nusus-filters{display:flex;gap:0.7rem;flex-wrap:wrap;margin-bottom:1rem}
-.nf-tag{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--cream3);border:0.5px solid var(--b3);padding:0.3rem 1rem;background:transparent;letter-spacing:0.1em;cursor:pointer;transition:all 0.25s;font-weight:400}
+.nf-tag{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--cream3);border:0.5px solid var(--b3);padding:0.3rem 1rem;background:transparent;letter-spacing:0.02em;cursor:pointer;transition:all 0.25s;font-weight:400}
 .nf-tag:hover,.nf-tag.active{color:var(--gold2);border-color:var(--gold);background:var(--gs)}
-.nusus-count{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--cream3);letter-spacing:0.15em;margin-bottom:2rem;font-weight:300}
+.nusus-count{font-family:'Tajawal',sans-serif;font-size:0.7rem;color:var(--cream3);letter-spacing:0.03em;margin-bottom:2rem;font-weight:300}
 .nusus-search-wrap{position:relative;margin-bottom:1.5rem}
 .nusus-search{width:100%;max-width:380px;background:transparent;border:none;border-bottom:0.5px solid var(--b3);padding:0.6rem 2rem 0.6rem 0;font-family:'Amiri',serif;font-size:1rem;color:var(--cream);outline:none;transition:border-color 0.25s;direction:rtl}
 .nusus-search::placeholder{color:var(--cream3);font-family:'Tajawal',sans-serif;font-size:0.8rem;letter-spacing:0.05em}
@@ -161,7 +161,7 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .nusus-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1.2rem}
 .nusus-card{border:0.5px solid var(--b2);padding:2rem 1.8rem;cursor:pointer;background:var(--bg3);transition:border-color 0.3s,background 0.3s}
 .nusus-card:hover{border-color:var(--gold);background:var(--bg)}
-.nc-type{font-family:'Tajawal',sans-serif;font-size:0.68rem;color:var(--gold);letter-spacing:0.2em;margin-bottom:0.8rem;font-weight:400;text-transform:uppercase}
+.nc-type{font-family:'Tajawal',sans-serif;font-size:0.68rem;color:var(--gold);letter-spacing:0.03em;margin-bottom:0.8rem;font-weight:400;text-transform:uppercase}
 .nc-title{font-family:'Amiri',serif;font-size:1.3rem;font-weight:700;color:var(--cream);margin-bottom:0.8rem;line-height:1.3}
 .nc-preview{font-family:'Amiri',serif;font-size:0.9rem;color:var(--cream3);line-height:1.85;font-style:italic;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 
@@ -172,11 +172,11 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .work-row:first-child{border-top:0.5px solid var(--b2)}
 .work-row:hover .work-title{color:var(--gold2)}
 .work-row:hover .work-arrow{opacity:1;transform:translateX(-4px)}
-.work-num{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--cream3);letter-spacing:0.1em;padding-top:0.4rem;font-weight:300}
+.work-num{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--cream3);letter-spacing:0.02em;padding-top:0.4rem;font-weight:300}
 .work-title{font-family:'Amiri',serif;font-size:1.6rem;font-weight:700;color:var(--cream);line-height:1.3;margin-bottom:0.4rem;transition:color 0.25s}
 .work-meta{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
-.work-year{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.15em;font-weight:400}
-.work-genre{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--cream3);letter-spacing:0.1em;font-weight:300}
+.work-year{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--gold);letter-spacing:0.03em;font-weight:400}
+.work-genre{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--cream3);letter-spacing:0.02em;font-weight:300}
 .work-badge{font-family:'Tajawal',sans-serif;font-size:0.65rem;color:var(--gold);border:0.5px solid var(--gb);padding:0.15rem 0.6rem}
 .work-wip{font-family:'Tajawal',sans-serif;font-size:0.65rem;color:var(--cream3);border:0.5px solid var(--b3);padding:0.15rem 0.6rem;font-style:italic}
 .work-desc{font-family:'Amiri',serif;font-size:0.92rem;color:var(--cream3);margin-top:0.5rem;line-height:1.8;font-style:italic;max-width:520px}
@@ -191,18 +191,18 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 .work-card:hover .wc-overlay{opacity:1}
 .wc-img{width:100%;aspect-ratio:2/3;object-fit:cover;display:block;border:0.5px solid var(--b3)}
 .wc-no-img{width:100%;aspect-ratio:2/3;background:var(--bg3);border:0.5px solid var(--b2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem;padding:1.5rem;text-align:center}
-.wc-no-num{font-family:'Tajawal',sans-serif;font-size:0.65rem;color:var(--cream3);letter-spacing:0.2em}
+.wc-no-num{font-family:'Tajawal',sans-serif;font-size:0.65rem;color:var(--cream3);letter-spacing:0.03em}
 .wc-no-title{font-family:'Amiri',serif;font-size:1.1rem;color:var(--cream2);line-height:1.4}
 .wc-overlay{position:absolute;inset:0;background:var(--bg);opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:flex-end;padding:1.2rem}
 .wc-ov-title{font-family:'Amiri',serif;font-size:1rem;color:var(--cream);line-height:1.3;margin-bottom:0.3rem}
-.wc-ov-year{font-family:'Tajawal',sans-serif;font-size:0.68rem;color:var(--gold);letter-spacing:0.1em}
+.wc-ov-year{font-family:'Tajawal',sans-serif;font-size:0.68rem;color:var(--gold);letter-spacing:0.02em}
 .wc-ov-badge{font-family:'Tajawal',sans-serif;font-size:0.6rem;color:var(--gold);border:0.5px solid var(--gb);padding:0.1rem 0.5rem;margin-top:0.4rem;display:inline-block}
 .wc-ov-wip{font-family:'Tajawal',sans-serif;font-size:0.6rem;color:var(--cream3);border:0.5px solid var(--b3);padding:0.1rem 0.5rem;margin-top:0.4rem;display:inline-block;font-style:italic}
 
 /* ABOUT */
 #section-about{background:var(--bg2)}
 .a-name{font-family:'Amiri',serif;font-size:2.3rem;font-weight:700;color:var(--cream);line-height:1.25;margin-bottom:0.4rem}
-.a-role{font-family:'Tajawal',sans-serif;font-size:0.78rem;color:var(--gold);letter-spacing:0.2em;font-weight:300}
+.a-role{font-family:'Tajawal',sans-serif;font-size:0.78rem;color:var(--gold);letter-spacing:0.05em;font-weight:300}
 .a-icon{display:flex;align-items:center;justify-content:center;color:var(--cream3);text-decoration:none;transition:color 0.2s,border-color 0.2s;width:2.4rem;height:2.4rem;border:0.5px solid var(--b3);border-radius:50%}
 .a-icon:hover{color:var(--gold);border-color:var(--gold)}
 .a-icon svg{width:1.2rem;height:1.2rem;flex-shrink:0;opacity:0.7;transition:opacity 0.2s}
@@ -211,7 +211,7 @@ nav.hide{opacity:0;transform:translateY(-100%);pointer-events:none}
 /* FOOTER */
 footer{border-top:0.5px solid var(--gb);padding:2rem 4rem;display:flex;align-items:center;justify-content:space-between;background:var(--bg)}
 .f-brand{font-family:'Amiri',serif;font-size:0.95rem;color:var(--gold2);font-weight:700}
-.f-copy{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--cream3);letter-spacing:0.1em;font-weight:300}
+.f-copy{font-family:'Tajawal',sans-serif;font-size:0.72rem;color:var(--cream3);letter-spacing:0.02em;font-weight:300}
 
 ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--gold)}
 ::selection{background:var(--gs);color:var(--cream)}
@@ -293,7 +293,6 @@ footer{border-top:0.5px solid var(--gb);padding:2rem 4rem;display:flex;align-ite
 
 <!-- HERO -->
 <section id="section-hero" class="hero">
-  <p class="h-orn">— كتابة —</p>
   <h1 class="h-title">شجرة لكل الثمار</h1>
   <p class="h-sub">جمعٌ للشتات</p>
   <p class="h-author">حسن فايع</p>
@@ -2438,7 +2437,7 @@ body:`"شيطانٌ وطفل، وحكيمٌ على كفّ السلطنة، وآ�
 {id:'ana_man_2',type:'نثر',title:'أنا مَن؟',
 preview:'أنا مَن، سؤالٌ شاعريٌ أو فن، غبير الحلم نالني، غبير الحُلم تبر، جال في خاطري، بيني والحُلم شبر،...',
 body:`أنا مَن، سؤالٌ شاعريٌ أو فن، غبير الحلم نالني، غبير الحُلم تبر، جال في خاطري، بيني والحُلم شبر، خيالٌ ما جال بي، واقعٌ ما حار بي، هُنا الموقوت هُنا، الكاتب الحسن أنا، بل الأحسن.`},
-{id:'ya_bint',type:'نثر',title:'يا بنت الكلب',
+{id:'ya_bint',type:'نثر',title:'لم تأتِ بعد',
 preview:'هَبي لي واقعًا لأحلامي الفاتنة، فلا أفتَنُ بخيال، قولي لي قولًا كاملًا عن شعورٍ كان من المحال، ...',
 body:`هَبي لي واقعًا لأحلامي الفاتنة، فلا أفتَنُ بخيال، قولي لي قولًا كاملًا عن شعورٍ كان من المحال، عن فتاةٍ من الحُسنِ خيطَت، كأنها ليست من هُنا، لها صيتٌ هُنا، يُعين خاطري على البقاء، يلوّن قصّتي بذكاء، فلا تُفرِطُ الألوان، ولا يذوق ورقي من بعد حِبري طعم الهوان، كوني كما أحكي فأنتِ من عبق الزهر الزكي، ومن خيال الكاتب الشقي، وما أحلى أحلام الشقي، كأنها كواكبٌ استبرقت في الفضاء فتغيّر للنور بعد انطفاء، بل كأنكِ أنتِ وأنتِ فوق الصفاء، وفوق الوصف، وفوق جاه الحرف، ونجاةُ خاطري، واستقامةُ فوضاي، وتمكين عبثي؛ أنتِ لو تدري، آيةُ الأسماء.`},
 {id:'alnass_ajmal',type:'نثر',title:'النص الأجمل',
