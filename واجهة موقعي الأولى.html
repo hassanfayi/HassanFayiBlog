@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حسن فايع</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#0b0b0d;
+  --fg:#ddd8d0;
+  --fg2:#a8a29a;
+  --fg3:#787370;
+  --fg4:#4a4745;
+  --gold:#c9a24d;
+  --steel:#8a9bb2;
+}
+
+html{scroll-behavior:smooth}
+body{
+  font-family:'Cairo',sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ═══ HERO ═══ */
+.hero{
+  min-height:100vh;min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:4rem 2rem 2rem;
+  position:relative;
+  text-align:center;
+}
+
+.name{
+  font-family:'Cairo',sans-serif;
+  font-weight:900;
+  font-size:clamp(5rem,15vw,11rem);
+  line-height:.88;
+  letter-spacing:-.02em;
+  color:var(--fg);
+  margin-bottom:2.5rem;
+  position:relative;
+}
+.name::after{
+  content:'';position:absolute;
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  width:120%;height:200%;
+  background:radial-gradient(ellipse,rgba(220,216,208,.03),transparent 60%);
+  pointer-events:none;z-index:-1;
+}
+.name span{
+  display:inline-block;opacity:0;
+  animation:revealUp .8s cubic-bezier(.22,1,.36,1) forwards;
+}
+.name span:nth-child(1){animation-delay:.1s}
+.name span:nth-child(2){animation-delay:.2s}
+
+@keyframes revealUp{
+  from{opacity:0;transform:translateY(25px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.rule{
+  width:80px;height:1px;background:var(--fg4);
+  margin:0 auto 2rem;
+  opacity:0;animation:fadeIn .5s ease .5s forwards;
+}
+
+.tier{opacity:0;animation:revealUp .6s cubic-bezier(.22,1,.36,1) forwards;margin-bottom:1.1rem}
+.tier-1{font-size:clamp(1.15rem,2.5vw,1.5rem);font-weight:600;color:var(--fg2);letter-spacing:.03em;animation-delay:.6s}
+.tier-2{font-size:clamp(.9rem,1.8vw,1.1rem);font-weight:400;color:var(--fg3);letter-spacing:.04em;animation-delay:.75s}
+.tier-3{font-size:clamp(.78rem,1.3vw,.92rem);font-weight:400;color:var(--fg3);letter-spacing:.08em;animation-delay:.9s;margin-bottom:2.8rem}
+.sep{display:inline-block;margin:0 .5em;color:var(--fg4);font-weight:300}
+
+.tagline{
+  font-family:'Amiri',serif;
+  font-size:clamp(1.3rem,3vw,1.9rem);
+  font-style:italic;
+  color:var(--fg3);
+  letter-spacing:.03em;
+  opacity:0;animation:revealUp .6s ease 1.05s forwards;
+}
+
+.scroll{
+  position:absolute;
+  bottom:clamp(1.5rem,3vh,2.5rem);
+  left:50%;transform:translateX(-50%);
+  opacity:0;animation:fadeIn .4s ease 1.4s forwards;
+}
+.scroll-btn{
+  width:42px;height:42px;border-radius:50%;
+  border:1px solid var(--fg4);background:none;
+  color:var(--fg3);font-size:.8rem;cursor:pointer;
+  transition:all .3s;
+  display:flex;align-items:center;justify-content:center;
+}
+.scroll-btn:hover{border-color:var(--fg2);color:var(--fg)}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ═══ SECTIONS ═══ */
+.sections{
+  max-width:1100px;
+  margin:0 auto;
+  padding:2rem clamp(1.5rem,4vw,3rem) 1.5rem;
+}
+
+/* two main cards */
+.main-cards{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:1px;
+  margin-bottom:1px;
+}
+
+.card{
+  padding:clamp(2.5rem,5vw,4rem) clamp(2rem,4vw,3.5rem);
+  text-decoration:none;
+  color:var(--fg);
+  cursor:pointer;
+  position:relative;
+  transition:all .4s ease;
+  border-top:1px solid var(--fg4);
+}
+.card:hover{background:rgba(220,216,208,.012)}
+
+/* hover line */
+.card::after{
+  content:'';position:absolute;top:-1px;right:0;
+  width:0;height:1px;
+  transition:width .5s cubic-bezier(.22,1,.36,1);
+}
+.card:hover::after{width:100%}
+
+.card--adab::after{background:var(--gold)}
+.card--work::after{background:var(--steel)}
+
+.card-title{
+  font-family:'Cairo',sans-serif;
+  font-weight:800;
+  font-size:clamp(1.8rem,4vw,2.8rem);
+  line-height:1.25;
+  margin-bottom:.8rem;
+}
+
+.card-desc{
+  font-size:clamp(.88rem,1.5vw,1rem);
+  font-weight:300;
+  color:var(--fg2);
+  line-height:1.9;
+  margin-bottom:1.8rem;
+  max-width:400px;
+}
+
+.card-arrow{
+  display:inline-block;
+  font-size:.78rem;font-weight:600;
+  color:var(--fg);
+  background:rgba(220,216,208,.08);
+  border:1px solid rgba(220,216,208,.1);
+  padding:.5rem 1.5rem;
+  border-radius:100px;
+  letter-spacing:.03em;
+  transition:all .3s;
+}
+.card:hover .card-arrow{
+  background:rgba(220,216,208,.14);
+  border-color:rgba(220,216,208,.18);
+}
+
+.card-soon{
+  display:inline-block;font-size:.62rem;font-weight:500;
+  letter-spacing:.06em;color:var(--fg2);
+  border:1px solid rgba(220,216,208,.12);
+  padding:.2rem .8rem;border-radius:100px;margin-bottom:1rem;
+}
+
+/* work card gets slightly more prominence */
+.card--work .card-title{
+  font-size:clamp(2rem,4.5vw,3rem);
+}
+.card--work{
+  border-top-color:rgba(138,155,178,.12);
+}
+
+/* ── strip: قلم بديل ── */
+.strip{
+  padding:clamp(1.5rem,3vw,2.2rem) clamp(2rem,4vw,3.5rem);
+  border-top:1px solid var(--fg4);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:2rem;
+  cursor:pointer;
+  transition:all .4s ease;
+  position:relative;
+}
+.strip:hover{background:rgba(220,216,208,.012)}
+.strip::after{
+  content:'';position:absolute;top:-1px;right:0;
+  width:0;height:1px;background:var(--fg2);
+  transition:width .5s cubic-bezier(.22,1,.36,1);
+}
+.strip:hover::after{width:100%}
+
+.strip-right{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+
+.strip-title{
+  font-family:'Cairo',sans-serif;
+  font-weight:700;
+  font-size:clamp(1.1rem,2vw,1.4rem);
+  color:var(--fg);
+}
+.strip-desc{
+  font-size:clamp(.82rem,1.2vw,.92rem);
+  font-weight:300;
+  color:var(--fg2);
+}
+.strip-soon{
+  font-size:.6rem;font-weight:500;
+  letter-spacing:.06em;color:var(--fg2);
+  border:1px solid rgba(220,216,208,.12);
+  padding:.15rem .65rem;border-radius:100px;
+}
+
+/* ═══ FOOTER ═══ */
+.footer{
+  border-top:1px solid rgba(220,216,208,.05);
+  padding:2.2rem clamp(1.5rem,4vw,3rem);
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:1rem;
+}
+.footer-copy{font-size:.72rem;color:var(--fg3);letter-spacing:.04em}
+.footer-links{display:flex;gap:1.8rem}
+.footer-links a{
+  font-size:.72rem;color:var(--fg3);
+  text-decoration:none;transition:color .25s;
+}
+.footer-links a:hover{color:var(--fg)}
+
+/* ═══ TOAST ═══ */
+#toast{
+  position:fixed;bottom:-70px;left:50%;transform:translateX(-50%);
+  background:var(--fg);color:var(--bg);
+  padding:.6rem 1.8rem;border-radius:100px;
+  font-size:.75rem;font-weight:600;z-index:10000;white-space:nowrap;
+  transition:bottom .4s cubic-bezier(.22,1,.36,1);
+  box-shadow:0 8px 30px rgba(0,0,0,.3);
+}
+
+.rv{opacity:0;transform:translateY(20px);transition:all .7s cubic-bezier(.22,1,.36,1)}
+.rv.vis{opacity:1;transform:translateY(0)}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:750px){
+  .main-cards{grid-template-columns:1fr}
+  .card{padding:2.5rem 1.5rem}
+  .card--work .card-title{font-size:clamp(1.8rem,6vw,2.2rem)}
+  .strip{flex-direction:column;align-items:flex-start;gap:1rem;padding:2rem 1.5rem}
+  .footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1 class="name"><span>حسن</span> <span>فايع</span></h1>
+  <div class="rule"></div>
+  <div class="tier tier-1">كاتب إبداعي<span class="sep">·</span>مؤلف أدبي<span class="sep">·</span>مستشار إبداعي</div>
+  <div class="tier tier-2">مقدّم ومحاور<span class="sep">·</span>كتابة سيناريو<span class="sep">·</span>إنتاج محتوى</div>
+  <div class="tier tier-3">Transcreation<span class="sep">·</span>SEO<span class="sep">·</span>Brand Strategy</div>
+  <p class="tagline">أفكر، أبحث، وأكتب..</p>
+  <div class="scroll">
+    <button class="scroll-btn" onclick="document.getElementById('sections').scrollIntoView({behavior:'smooth'})">↓</button>
+  </div>
+</section>
+
+<section id="sections">
+  <div class="sections">
+
+    <!-- two main cards -->
+    <div class="main-cards">
+
+      <a class="card card--adab rv" href="shajarah.html">
+        <h2 class="card-title">شجرة لكل الثمار</h2>
+        <p class="card-desc">كتاباتي لنفسي</p>
+        <span class="card-arrow">اقرأ</span>
+      </a>
+
+      <div class="card card--work rv" onclick="showToast()" style="transition-delay:.1s">
+        <span class="card-soon">قريبًا</span>
+        <h2 class="card-title">إعلامي وأعمالي</h2>
+        <p class="card-desc">الأعمال المتعلقة بالمجالات التسويقية، الإعلامية، والتجارية</p>
+      </div>
+
+    </div>
+
+    <!-- smaller strip -->
+    <div class="strip rv" onclick="showToast()" style="transition-delay:.18s">
+      <div class="strip-right">
+        <span class="strip-title">قلم بديل</span>
+        <span class="strip-desc">كتاباتي للناس</span>
+      </div>
+      <span class="strip-soon">قريبًا</span>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer rv" style="transition-delay:.25s">
+  <span class="footer-copy">© حسن فايع · جميع الحقوق محفوظة</span>
+  <div class="footer-links">
+    <a href="https://x.com/HassanFayi" target="_blank">X</a>
+    <a href="https://instagram.com/HassanFayi" target="_blank">Instagram</a>
+    <a href="mailto:hassanfayi.b@gmail.com">البريد</a>
+  </div>
+</footer>
+
+<div id="toast">هذه الصفحة قادمة قريبًا — ترقّبوا</div>
+
+<script>
+function showToast(){
+  const t=document.getElementById('toast');
+  t.style.bottom='2rem';
+  clearTimeout(window._tt);
+  window._tt=setTimeout(()=>{t.style.bottom='-70px'},2800);
+}
+const obs=new IntersectionObserver(e=>{
+  e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}});
+},{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+</script>
+
+</body>
+</html>
